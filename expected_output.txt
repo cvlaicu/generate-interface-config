@@ -1,0 +1,100 @@
+[+] Hello, would you like to configure prod or dev? (type prod/dev): <user_input> prod </user_input>
+
+[+] Generating config, please wait...
+
+
+[+] Config for ROUTER 1
+-------------------------------------
+
+interface GigabitEthernet0/0.1
+description to CONTAINER1_V10_EPG_1 (2105-1/47)
+encapsulation dot1Q 1
+ip address 10.10.10.1 255.255.255.0
+ip helper-address xxxxxxxxx
+no ip proxy-arp
+no cdp enable
+!
+interface GigabitEthernet0/0.2
+description to CONTAINER2_V20_EPG_2 (2105-1/47)
+encapsulation dot1Q 2
+ip address 10.10.10.2 255.255.255.128
+ip helper-address xxxxxxxxx
+no ip proxy-arp
+no cdp enable
+!
+interface GigabitEthernet0/0.3
+description to CONTAINER3_V30_EPG_3 (2105-1/47)
+encapsulation dot1Q 3
+ip address 10.10.10.3 255.255.255.192
+ip helper-address xxxxxxxxx
+no ip proxy-arp
+no cdp enable
+!
+interface GigabitEthernet0/0.4
+description to CONTAINER4_V40_EPG_4 (2105-1/47)
+encapsulation dot1Q 4
+ip address 10.10.10.4 255.255.255.224
+ip helper-address xxxxxxxxx
+no ip proxy-arp
+no cdp enable
+!
+interface GigabitEthernet0/0.5
+description to CONTAINER5_V50_EPG_5 (2105-1/47)
+encapsulation dot1Q 5
+ip address 10.10.10.5 255.255.255.240
+ip helper-address xxxxxxxxx
+no ip proxy-arp
+no cdp enable
+!
+
+
+[+] Config for ROUTER 2
+-------------------------------------
+
+interface GigabitEthernet0/0.1
+description to CONTAINER1_V10_EPG_1 (2205-1/47)
+encapsulation dot1Q 1
+ip address 10.10.10.2 255.255.255.0
+ip helper-address xxxxxx
+no ip proxy-arp
+no cdp enable
+!
+interface GigabitEthernet0/0.2
+description to CONTAINER2_V20_EPG_2 (2205-1/47)
+encapsulation dot1Q 2
+ip address 10.10.10.3 255.255.255.128
+ip helper-address xxxxxx
+no ip proxy-arp
+no cdp enable
+!
+interface GigabitEthernet0/0.3
+description to CONTAINER3_V30_EPG_3 (2205-1/47)
+encapsulation dot1Q 3
+ip address 10.10.10.4 255.255.255.192
+ip helper-address xxxxxx
+no ip proxy-arp
+no cdp enable
+!
+interface GigabitEthernet0/0.4
+description to CONTAINER4_V40_EPG_4 (2205-1/47)
+encapsulation dot1Q 4
+ip address 10.10.10.5 255.255.255.224
+ip helper-address xxxxxx
+no ip proxy-arp
+no cdp enable
+!
+interface GigabitEthernet0/0.5
+description to CONTAINER5_V50_EPG_5 (2205-1/47)
+encapsulation dot1Q 5
+ip address 10.10.10.6 255.255.255.240
+ip helper-address xxxxxx
+no ip proxy-arp
+no cdp enable
+!
+
+
+------------------
+
+[+] Configured a total of 5 interfaces.
+
+[+] Press ENTER to exit.
